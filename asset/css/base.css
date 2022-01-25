@@ -1,0 +1,68 @@
+:root {
+    --background-color: linear-gradient(to top, #000, #040404, #020202);
+    --white-color: rgb(255, 255, 255);
+    --opacity-color-img: rgb(80, 80, 80);
+    --opacity-icon: rgb(34, 34, 34);
+    --text-color: #616161;
+}
+
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+h2 {
+    display: block;
+    /* margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid rgb(119, 114, 114);
+    margin: 20px 0;
+}
+
+button {
+    outline: none;
+}
+
+.head-text {
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: var(--white-color) !important;
+    background-color: var(--opacity-icon);
+}
+
+.height-th {
+    --height-th: 100px; 
+    line-height: calc(var(--height-th) - 32px);
+}
+
+.height-td {
+    --height-td: 55px;
+    line-height: calc(var(--height-th) - 32px);
+}
+
+.height-td-price {
+    --height-td-price: 120px;
+    /* height: var(--height-td-price); */
+    line-height: calc(var(--height-th) - 32px);
+}
+
