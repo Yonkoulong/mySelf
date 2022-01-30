@@ -24,13 +24,15 @@
 }
 
 .sidebar__left-link {
-    --heigh-sidebar-icon: 95px;
-    height: var(--heigh-sidebar-icon);
+    --height-sidebar-item: 95px;
+    height: var(--height-sidebar-item);
+    line-height: var(--height-sidebar-item);
     text-decoration: none;
     color: var(--white-color);
     max-width: 120px;
     text-align: center;
     display: block;
+    position: relative;
 }
 
 .sidebar__left-link:hover {
@@ -46,18 +48,24 @@
 }
 
 .sidebar__left-icon {
-    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    bottom: 0;
+    left: 0;
     font-size: 2rem;
-    text-align: center;
+   
 }
 
-.sidebar__left-link p{
-    display: block;
-    font-size: 12px;
-    font-weight: 100;
-    text-align: center;
+.sidebar__left-link span{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: 00;
     color: var(--white-color);
-    padding: 12px;  
 }   
 
 /* header */
@@ -79,6 +87,10 @@
     max-width: 982px;
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(133, 115, 115, 0.2), 0 6px 20px 0 rgba(243, 197, 197, 0.19);;
+}
+
+.content__heading--menu {
+    display: none;
 }
 
 .content-name {
@@ -333,6 +345,27 @@
     margin: 40px 0;
 }
 
+.button-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.button-group button {
+    outline: none;
+    border: none;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 10px;
+    background-color:rgba(133, 115, 115, 0.2);
+    color: var(--white-color);
+}
+
+.button-group button:hover {
+    cursor: pointer;
+    background-color: rgba(156, 127, 127, 0.2);
+}
+
 .layout {
     display: grid;
     /* grid-template-columns: column-size column-size ... ; */
@@ -386,6 +419,8 @@
 }
 
 .contact__detail-address {
+    display: flex;
+    align-items: center;
     margin: 20px 0;
 }
 
@@ -396,7 +431,10 @@
 
 .contact__detail-info {
     color: var(--text-color);
-    margin-left: 20px;
+    font-size: 1.4rem;
+    flex: 1;
+    margin-left: 10px;
+    
 }
 
 .contact__form {
@@ -405,14 +443,14 @@
 .contact__form-input {
     width: 100%;
     padding: 16px 8px;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 200;
 }
 
 .contact__form-btn {
     padding: 16px 8px;
     width: 26%;
-    font-size: 0.9rem;
+    font-size: 1.4rem;
     font-weight: 200;
 }
 
@@ -424,12 +462,12 @@
     padding: 64px 0;
 }
 .footer__icon {
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: var(--text-color);
     margin: 10px 4px 10px 0;
 }
 .footer__maker {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: var(--text-color);
     margin: 10px 4px 10px 0;
 }
@@ -438,3 +476,4 @@
     color: var(--text-color);
     margin-left: 6px;
 }
+

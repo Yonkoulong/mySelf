@@ -7,47 +7,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
-    <link rel="stylesheet" href="/asset/css/base.css" />
+    <link rel="stylesheet" href="./asset/css/base.css" />
     <link rel="stylesheet" href="./asset/css/style.css" />
     <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/reponsive.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="app">
-        <div class="grid">
-            <div class="row">
-                <div class="col l-1">
+        <div class="grid wide">
+            <div class="wide row">
+                <div class="col l-1 m-0">
                     <nav class="sidebar__left">
                         <div class="opacity__img">
                             <img src="./asset/css/img/background-removebg.png" alt="" class="sidebar__left-img" />
                         </div>
                         <a href="#home" class="sidebar__left-link sidebar__left-link--active">
                             <i class="fa fa-home sidebar__left-icon"></i>
-                            <p>HOME</p>
+                            <span>HOME</span>
                         </a>
                         <a href="#about" class="sidebar__left-link">
                             <i class="fa fa-user sidebar__left-icon"></i>
-                            <p>ABOUT</p>
+                            <span>ABOUT</span>
                         </a>
                         <a href="#photos" class="sidebar__left-link">
                             <i class="fa fa-eye sidebar__left-icon"></i>
-                            <p>PHOTOS</p>
+                            <span>PHOTOS</span>
                         </a>
                         <a href="#projects" class="sidebar__left-link">
-                            <i class="fa fa-eye sidebar__left-icon"></i>
-                            <p>PROJECTS</p>
+                            <i class="fa fa-file sidebar__left-icon"></i>
+                            <span>PROJECTS</span>
                         </a>
                         <a href="#contact" class="sidebar__left-link">
                             <i class="fa fa-envelope sidebar__left-icon"></i>
-                            <p>CONTACT</p>
+                            <span>CONTACT</span>
                         </a>
                     </nav>
+
                 </div>
                 <!-- <div class="content"> -->
-                <div class="col l-11">
+                <div class="col l-11 m-12">
                     <div class="content__heading">
-                        <div id="home">
+                        <div class="content__heading--menu">
+                            <a href="#home" class="active"Home>Home</a>
+                            <div id="myLinks">
+                                <a href="#about">About</a>
+                                <a href="#photos">Photos</a>
+                                <a href="#projects">Projects</a>
+                                <a href="#contact">Contact</a>
+                            </div>
+                            <a href="javascript:void(0)" onclick="handleMobileMenu()" class="icon">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                        <div id="home" class="content-item">
                             <h1 class="content-name">I'm Yonkou Long.</h1>
                             <p class="content-job">Web Designer and Photographer.</p>
                         </div>
@@ -55,7 +69,7 @@
                     </div>
 
                     <div class="content__body">
-                        <div id="about">
+                        <div id="about" class="content-item">
 
                             <!-- goals job -->
                             <div class="about__goals">
@@ -187,50 +201,61 @@
                         </div>
 
                         <!-- My Photos -->
-                        <div class="container" id="photos">
+                        <div class="container content-item" id="photos">
                             <h2 class="about__title-h2">My Photos</h2>
                             <hr style="width: 200px" class="bd-bottom">
+                            <!-- <div class="button-group">
+                                <button>ALL</button>
+                                <button>Selfies</button>
+                                <button>Hola</button>
+                            </div> -->
                             <div class="layout">
                                 <div class="layout-item">
                                     <a href="./asset/css/img/img1.jpg" data-fancybox="group1">
-                                        <img src="./asset/css/img/img1.jpg" alt="" class="layout-image lazy">
+                                        <img src="./asset/css/img/img1.jpg" alt="" class="layout-image all selfies">
                                     </a>
                                 </div>
                                 <div class="layout-item">
                                     <a href="./asset/css/img/img2.jpg" data-fancybox="group2">
-                                        <img src="./asset/css/img/img2.jpg" alt="" class="layout-image lazy">
+                                        <img src="./asset/css/img/img2.jpg" alt="" class="layout-image all hola">
                                     </a>
                                 </div>
                                 <div class="layout-item">
                                     <a href="./asset/css/img/img5.jpg" data-fancybox="group2">
-                                        <img src="./asset/css/img/img5.jpg" alt="" class="layout-image lazy">
+                                        <img src="./asset/css/img/img5.jpg" alt="" class="layout-image all hola">
                                     </a>
                                 </div>
                                 <div class="layout-item">
                                     <a href="./asset/css/img/img7.jpg" data-fancybox="group1">
-                                        <img src="./asset/css/img/img7.jpg" alt="" class="layout-image lazy">
+                                        <img data-src="./asset/css/img/img7.jpg" alt="" class="layout-image all selfies lazy">
                                     </a>
                                 </div>
                                 <div class="layout-item">
                                     <a href="./asset/css/img/img3.jpg" data-fancybox="group1">
-                                        <img src="./asset/css/img/img3.jpg" alt="" class="layout-image lazy">
+                                        <img data-src="./asset/css/img/img3.jpg" alt="" class="layout-image all selfies lazy">
                                     </a>
                                 </div>
                                 <div class="layout-item">
                                     <a href="./asset/css/img/img6.jpg" data-fancybox="group2">
-                                        <img src="./asset/css/img/img6.jpg" alt="" class="layout-image lazy">
+                                        <img data-src="./asset/css/img/img6.jpg" alt="" class="layout-image all hola lazy">
                                     </a>
                                 </div>
                                 <div class="layout-item">
                                     <a href="./asset/css/img/img4.jpg" data-fancybox="group1">
-                                        <img src="./asset/css/img/img4.jpg" alt="" class="layout-image lazy">
+                                        <img data-src="./asset/css/img/img4.jpg" alt="" class="layout-image all selfies lazy">
                                     </a>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="content-item" id="projects">
+                            <h2 class="about__title-h2">My Projects</h2>
+                            <hr style="width: 200px" class="bd-bottom">
+                            
+                        </div>
+
                         <!-- contact -->
-                        <div class="contact" id="contact">
+                        <div class="contact content-item" id="contact">
                             <h2 class="about__title-h2">Contact Me</h2>
                             <hr style="width: 200px" class="bd-bottom">
                             <div class="contact__detail">
@@ -269,19 +294,19 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
-                    <div class="content__footer">
-                        <footer class="footer">
-                            <i class="footer__icon fa fa-facebook-official"></i>
-                            <i class="footer__icon fa fa-facebook-officia"></i>
-                            <i class="footer__icon fa fa-instagram opacity"></i>
-                            <i class="footer__icon fa fa-snapchat opacity"></i>
-                            <i class="footer__icon fa fa-pinterest-p opacity"></i>
-                            <i class="footer__icon fa fa-twitter opacity"></i>
-                            <i class="footer__icon fa fa-linkedin opacity"></i>
-                            <p class="footer__maker">Powered by<a href="" class="foooter__marker-link">Yonkou</a>
-                            </p>
-                        </footer>
+                        
+                        <div class="content__footer">
+                            <footer class="footer">
+                                <i class="footer__icon fa fa-instagram opacity"></i>
+                                <i class="footer__icon fa fa-snapchat opacity"></i>
+                                <i class="footer__icon fa fa-pinterest-p opacity"></i>
+                                <i class="footer__icon fa fa-twitter opacity"></i>
+                                <i class="footer__icon fa fa-linkedin opacity"></i>
+                                <i class="footer__icon fa fa-facebook-official"></i>
+                                <p class="footer__maker">Powered by<a href="" class="foooter__marker-link">Yonkou</a>
+                                </p>
+                            </footer>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -290,8 +315,12 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="./fancyboxImages.js"></script>
+<script src="./lazyLoadingImages.js"></script>
+<script src="./filterLayoutImages.js"></script>
+<script src="./main.js"></script>
 
-
-<script src="./app.js"></script>
 
 </html>

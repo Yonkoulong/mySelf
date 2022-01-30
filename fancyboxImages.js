@@ -21,3 +21,5 @@ $('[data-fancybox="group1"').fancybox({
     //day la nhung button muon hien cai nao thi them cai do
 });
 
+
+
