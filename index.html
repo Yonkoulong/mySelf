@@ -16,29 +16,32 @@
 
 <body>
     <div class="app">
-        <div class="grid wide">
+        <div class="intro-overlay">
+            <h1>Welcome to My Portfolio</h1>
+        </div>
+        <div class="main-content grid wide">
             <div class="wide row">
                 <div class="col l-1 m-0">
                     <nav class="sidebar__left">
                         <div class="opacity__img">
                             <img src="./asset/css/img/background-removebg.png" alt="" class="sidebar__left-img" />
                         </div>
-                        <a href="#home" class="sidebar__left-link sidebar__left-link--active">
+                        <a href="#about" class="sidebar__left-link sidebar__left-link--active">
                             <i class="fa fa-home sidebar__left-icon"></i>
-                            <span>HOME</span>
-                        </a>
-                        <a href="#about" class="sidebar__left-link">
-                            <i class="fa fa-user sidebar__left-icon"></i>
                             <span>ABOUT</span>
                         </a>
-                        <a href="#photos" class="sidebar__left-link">
+                        <a href="#skill" class="sidebar__left-link">
+                            <i class="fa fa-user sidebar__left-icon"></i>
+                            <span>SKILL</span>
+                        </a>
+                        <a href="#work" class="sidebar__left-link">
+                            <i class="fa fa-user sidebar__left-icon"></i>
+                            <span>WORK</span>
+                        </a>
+                        <!-- <a href="#photos" class="sidebar__left-link">
                             <i class="fa fa-eye sidebar__left-icon"></i>
                             <span>PHOTOS</span>
-                        </a>
-                        <a href="#projects" class="sidebar__left-link">
-                            <i class="fa fa-file sidebar__left-icon"></i>
-                            <span>PROJECTS</span>
-                        </a>
+                        </a> -->
                         <a href="#contact" class="sidebar__left-link">
                             <i class="fa fa-envelope sidebar__left-icon"></i>
                             <span>CONTACT</span>
@@ -50,11 +53,12 @@
                 <div class="col l-11 m-12">
                     <div class="content__heading">
                         <div class="content__heading--menu">
-                            <a href="#home" class="active"Home>Home</a>
+                            <a href="#home" class="active" Home>Home</a>
                             <div id="myLinks">
                                 <a href="#about">About</a>
-                                <a href="#photos">Photos</a>
-                                <a href="#projects">Projects</a>
+                                <a href="#skill">SKILL</a>
+                                <a href="#work">WORK</a>
+                                <!-- <a href="#photos">Photos</a> -->
                                 <a href="#contact">Contact</a>
                             </div>
                             <a href="javascript:void(0)" onclick="handleMobileMenu()" class="icon">
@@ -69,147 +73,94 @@
                     </div>
 
                     <div class="content__body">
-                        <div id="about" class="content-item">
 
-                            <!-- goals job -->
-                            <div class="about__goals">
-                                <h2 class="about__title-h2">Goals Job</h2>
-                                <hr style="width: 200px" class="bd-bottom">
-                                <div class="about__title-info">
-                                    <div class="about__title-main">Short-term:</div>
-                                    <p class="about__title-desc">
-                                        Reach out and learn more about technology and programming. Specifically,
-                                        creating many dynamic web pages using JavaScript and using ReactJs. After
-                                        working as an internn at thecompany, I want to use it for work.
-                                    </p>
-                                </div>
-                                <div class="about__title-info">
-                                    <div class="about__title-main">Long-term:</div>
-                                    <p class="about__title-desc">
-                                        The goal in the next 3 years I will become a professional Front-end developer
-                                        and learn more React-native to create apps.
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- skills -->
-                            <div class="about__skills">
-                                <h2 class="about__title-h2">Skills</h2>
-                                <hr style="width: 200px" class="bd-bottom">
-                                <div class="about__title-bar bar1">
-                                    <div class="about__title-progress"></div>
-                                    <span class="about__title-skill">English</span>
-                                </div>
-                                <div class="about__title-bar bar2">
-                                    <div class="about__title-progress"></div>
-                                    <span class="about__title-skill">Web Design</span>
-                                </div>
-                                <div class="about__title-bar bar3">
-                                    <div class="about__title-progress"></div>
-                                    <span class="about__title-skill">Office Information</span>
-                                </div>
-                            </div>
-                            <!-- statistics -->
-                            <div class="about__statistics">
-                                <div class="about__statistics-item">
-                                    <h2 class="about__statistics-numbers">11+</h2>
-                                    <span class="about__statistic-text">Partners</span>
-                                </div>
-                                <div class="about__statistics-item">
-                                    <h2 class="about__statistics-numbers">55+</h2>
-                                    <span class="about__statistic-text">Projects Done</span>
-                                </div>
-                                <div class="about__statistics-item">
-                                    <h2 class="about__statistics-numbers">89+</h2>
-                                    <span class="about__statistic-text">Happy Clients</span>
-                                </div>
-                                <div class="about__statistics-item">
-                                    <h2 class="about__statistics-numbers">150+</h2>
-                                    <span class="about__statistic-text">Meetings</span>
-                                </div>
-                            </div>
-
-                            <!-- download -->
-                            <button class="about__btn">
-                                <i class="fa fa-download"></i>
-                                Download Resume
-                            </button>
-
-                            <!-- My price -->
-                            <div class="about__Website">
-                                <h2 class="about__title-h2">Price Website</h2>
-                                <hr style="width: 200px" class="bd-bottom">
-
-                                <div class="about__price">
-                                    <div class="about__price-basic">
-                                        <ul class="about__price-list">
-                                            <li class="about__price-item head-text height-th">Basic</li>
-                                            <li class="about__price-item height-td">Web Design</li>
-                                            <li class="about__price-item height-td">Photography</li>
-                                            <li class="about__price-item height-td">5GB Storage</li>
-                                            <li class="about__price-item height-td">Mail Support</li>
-                                            <li class="about__price-item height-td-price">
-                                                <h2 class="big-price">$ 10</h2>
-                                                <span class="opacity-text">per month</span>
-                                            </li>
-                                            <li class="about__price-item height-th">
-                                                <button class="about__price-item-btn">Sign Up</button>
-                                            </li>
-                                        </ul>
+                        <!-- goals -->
+                        <section>
+                            <div id="about" class="content-item">
+                                <div class="about__goals">
+                                    <h2 class="about__title-h2">Goals</h2>
+                                    <hr style="width: 200px" class="bd-bottom">
+                                    <div class="about__title-info">
+                                        <div class="about__title-main">Short-term:</div>
+                                        <p class="about__title-desc">
+                                            I aim to leverage my two years of experience as a Frontend Developer to
+                                            contribute effectively in a dynamic team environment. My focus is on refining my
+                                            skills in modern frontend technologies, improving code quality, and solving
+                                            complex problems, while staying updated with the latest industry trends.
+                                        </p>
                                     </div>
-                                    <div class="about__price-pro">
-                                        <ul class="about__price-list">
-                                            <li class="about__price-item head-text height-th">Pro</li>
-                                            <li class="about__price-item height-td">Web Design</li>
-                                            <li class="about__price-item height-td">Photography</li>
-                                            <li class="about__price-item height-td">50GB Storage</li>
-                                            <li class="about__price-item height-td">Endless Support</li>
-                                            <li class="about__price-item height-td-price">
-                                                <h2 class="big-price">$ 25</h2>
-                                                <span class="opacity-text">per month</span>
-                                            </li>
-                                            <li class="about__price-item height-th">
-                                                <button class="about__price-item-btn">Sign Up</button>
-                                            </li>
-                                        </ul>
+                                    <div class="about__title-info">
+                                        <div class="about__title-main">Long-term:</div>
+                                        <p class="about__title-desc">
+                                            My aspiration is to advance into a leadership role where I can mentor and guide
+                                            teams in developing innovative and user-centric web solutions. I seek to
+                                            continually expand my expertise in frontend development and take on challenging
+                                            projects that drive business success and align with organizational goals.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
+                        </section>
 
-                            <!-- My Reputation -->
+                        <!-- My education -->
+                        <section>
                             <div class="about__education">
                                 <h2 class="about__title-h2">Education</h2>
                                 <hr style="width: 200px" class="bd-bottom">
 
                                 <div class="about__reputation">
                                     <div class="about__reputation-list">
-                                        <img src="./asset/css/img/avatar.png" alt="" class="reputation-item-img">
+                                        <img src="./asset/css/img/avatarPassport.png" alt="" class="reputation-item-img">
                                         <div class="about__reputation-item">
                                             <div class="reputation-item-name">2019 - 2023</div>
                                             <div class="reputation-item-judge">University of Greenwich Vietnam</div>
-                                        </div>
-                                    </div>
-                                    <div class="about__reputation-list">
-                                        <img src="./asset/css/img/avatarPassport.png" alt=""
-                                            class="reputation-item-img">
-                                        <div class="about__reputation-item">
-                                            <div class="reputation-item-name">Major is information technology</div>
-                                            <div class="reputation-item-judge">Currently, Third year student</div>
+                                            <div class="reputation-item-judge"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
+
+                        <!-- skills -->
+                        <section>
+                            <div class="content-item" id="skill">
+                                <div class="about__skills">
+                                    <h2 class="about__title-h2">Skills</h2>
+                                    <hr style="width: 200px" class="bd-bottom">
+                                    <div class="about__title-bar bar1">
+                                        <div class="about__title-progress"></div>
+                                        <span class="about__title-skill">English</span>
+                                    </div>
+                                    <div class="about__title-bar bar2">
+                                        <div class="about__title-progress"></div>
+                                        <span class="about__title-skill">Web Design</span>
+                                    </div>
+                                    <div class="about__title-bar bar3">
+                                        <div class="about__title-progress"></div>
+                                        <span class="about__title-skill">Office Information</span>
+                                    </div>
+                                </div>
+
+                                <!-- download -->
+                                <button class="about__btn">
+                                    <i class="fa fa-download"></i>
+                                    Download Resume
+                                </button>
+                            </div>
+
+                        </section>
+          
 
                         <!-- My Photos -->
-                        <div class="container content-item" id="photos">
+                        <!-- <div class="container content-item" id="photos">
                             <h2 class="about__title-h2">My Photos</h2>
-                            <hr style="width: 200px" class="bd-bottom">
-                            <!-- <div class="button-group">
+                            <hr style="width: 200px" class="bd-bottom"> -->
+                        <!-- <div class="button-group">
                                 <button>ALL</button>
                                 <button>Selfies</button>
                                 <button>Hola</button>
                             </div> -->
-                            <div class="layout">
+                        <!-- <div class="layout">
                                 <div class="layout-item">
                                     <a href="./asset/css/img/img1.jpg" data-fancybox="group1">
                                         <img src="./asset/css/img/img1.jpg" alt="" class="layout-image all selfies">
@@ -245,16 +196,20 @@
                                         <img data-src="./asset/css/img/img4.jpg" alt="" class="layout-image all selfies lazy">
                                     </a>
                                 </div>
-                            </div>
-                        </div>
+                            </div> -->
+                        <!-- </div> -->
 
-                        <div class="content-item" id="projects">
-                            <h2 class="about__title-h2">My Projects</h2>
-                            <hr style="width: 200px" class="bd-bottom">
-                            
-                        </div>
+                        <!-- work -->
+                        <section>
+                            <div class="content-item" id="work">
+                                <h2 class="about__title-h2">My Projects</h2>
+                                <hr style="width: 200px" class="bd-bottom">
+
+                            </div>
+                        </section>
 
                         <!-- contact -->
+                        <section></section>
                         <div class="contact content-item" id="contact">
                             <h2 class="about__title-h2">Contact Me</h2>
                             <hr style="width: 200px" class="bd-bottom">
@@ -294,7 +249,7 @@
                                 </div>
                             </form>
                         </div>
-                        
+
                         <div class="content__footer">
                             <footer class="footer">
                                 <i class="footer__icon fa fa-instagram opacity"></i>

@@ -46,3 +46,14 @@ function handleMobileMenu() {
         menu.style.display = "block";
     }
 }
+
+window.addEventListener('load', function() {
+    const overlay = document.querySelector('.intro-overlay');
+    const mainContent = document.querySelector('.main-content');
+
+    setTimeout(() => {
+        overlay.classList.add('fade-out');
+        mainContent.style.display = 'block'; // Show main content
+        document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }, 2000); // Adjust timing as needed
+});
