@@ -108,7 +108,17 @@
         top: 0;
     }
 
+    /* Projects */
+    .work__detail-content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
+    .work__detail-content-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 /* iphone */
